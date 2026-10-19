@@ -1,0 +1,8 @@
+{
+  "resource": "https://agent-field-kit.example/mcp",
+  "authorization_servers": ["https://identity.example"],
+  "scopes_supported": ["cases.read", "reviews.write"],
+  "bearer_methods_supported": ["header"],
+  "resource_documentation": "https://agent-field-kit.example/docs/auth"
+}
+

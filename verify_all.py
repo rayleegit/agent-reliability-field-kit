@@ -37,7 +37,12 @@ def main() -> None:
         [sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"],
         "typed-decision-lab",
     )
-    print("\nAll five demos verified and every release gate succeeded.")
+    run([sys.executable, "run_demo.py"], "neo4j-graphrag-workshop")
+    run(
+        [sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"],
+        "neo4j-graphrag-workshop",
+    )
+    print("\nAll six demos verified and every release gate succeeded.")
 
 
 if __name__ == "__main__":

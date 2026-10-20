@@ -13,6 +13,7 @@ The examples use fictional vendor-risk and incident-response data. They do **not
 | [`codex-delivery-harness`](./codex-delivery-harness) | A repeatable spec → implementation → test → review workflow for AI-assisted engineering | OpenAI Codex, OpenHands |
 | [`exa-grounded-research`](./exa-grounded-research) | Search-result normalization, source diversity, claim-level citation checks, and release gates | Exa Developer Advocate |
 | [`typed-decision-lab`](./typed-decision-lab) | Typed decisions, calibrated-confidence evaluation, and human-review routing | TypeSafe AI Developer Advocate |
+| [`neo4j-graphrag-workshop`](./neo4j-graphrag-workshop) | Typed graph expansion, provenance, access filtering, and GraphRAG release checks | Neo4j Senior Developer Advocate, Startups |
 
 ## Five-minute tour
 
@@ -21,7 +22,7 @@ python3 verify_all.py
 python3 scripts/security_audit.py
 ```
 
-The commands run all five demos and their tests, then scan tracked files for common secrets and credential-bearing filenames. They run locally without credentials or network access.
+The commands run all six demos and their tests, then scan tracked files for common secrets and credential-bearing filenames. They run locally without credentials or network access.
 
 ## Design principles
 

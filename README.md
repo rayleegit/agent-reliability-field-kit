@@ -11,6 +11,8 @@ The examples use fictional vendor-risk and incident-response data. They do **not
 | [`eval-lab`](./eval-lab) | Golden sets, failure taxonomies, regression metrics, adversarial robustness, and human-review thresholds | Distyl, Appen, SafetyKit |
 | [`identity-gateway`](./identity-gateway) | Audience, expiry, and scope enforcement for MCP-style tools, including an OAuth challenge | OpenAI Sign in with ChatGPT, 1Password |
 | [`codex-delivery-harness`](./codex-delivery-harness) | A repeatable spec → implementation → test → review workflow for AI-assisted engineering | OpenAI Codex, OpenHands |
+| [`exa-grounded-research`](./exa-grounded-research) | Search-result normalization, source diversity, claim-level citation checks, and release gates | Exa Developer Advocate |
+| [`typed-decision-lab`](./typed-decision-lab) | Typed decisions, calibrated-confidence evaluation, and human-review routing | TypeSafe AI Developer Advocate |
 
 ## Five-minute tour
 
@@ -19,7 +21,7 @@ python3 verify_all.py
 python3 scripts/security_audit.py
 ```
 
-The commands run all three demos and their 13 tests, then scan tracked files for common secrets and credential-bearing filenames. They run locally without credentials or network access.
+The commands run all five demos and their tests, then scan tracked files for common secrets and credential-bearing filenames. They run locally without credentials or network access.
 
 ## Design principles
 

@@ -27,7 +27,17 @@ def main() -> None:
         "codex-delivery-harness",
     )
     run([sys.executable, "scripts/verify.py"], "codex-delivery-harness")
-    print("\nAll demos verified: 13 tests passed and both release gates succeeded.")
+    run([sys.executable, "run_demo.py"], "exa-grounded-research")
+    run(
+        [sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"],
+        "exa-grounded-research",
+    )
+    run([sys.executable, "run_demo.py"], "typed-decision-lab")
+    run(
+        [sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"],
+        "typed-decision-lab",
+    )
+    print("\nAll five demos verified and every release gate succeeded.")
 
 
 if __name__ == "__main__":

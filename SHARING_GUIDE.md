@@ -2,7 +2,7 @@
 
 ## 90-second walkthrough
 
-> I built this field kit to make my approach to production agents inspectable without exposing confidential client systems. The evaluation lab starts with a golden set, measures a simple baseline, then adds explicit policy logic, adversarial defenses, and a human-review path. The identity gateway shows how I gate MCP-style tools by audience, expiry, and least-privilege scopes. The Codex harness shows how I structure AI-assisted engineering so requirements, tests, and review evidence remain traceable. Everything runs locally without credentials, and the optional model adapter is separated from the evaluator so the quality system is provider-independent.
+> I built this field kit to make my approach to production agents inspectable without exposing confidential client systems. The evaluation lab starts with a golden set, measures a simple baseline, then adds explicit policy logic, adversarial defenses, and a human-review path. The identity gateway shows how I gate tools by audience, expiry, and least-privilege scopes. The grounded-research demo checks source diversity and claim-level citations, while the typed-decision lab separates probabilistic judgment from application policy. Everything runs locally without credentials, and optional provider adapters remain separate from deterministic evaluation.
 
 ## Lead-specific hooks
 
@@ -25,6 +25,14 @@ Focus on the identity gateway: resource audience, scopes, expiry, stable identit
 ### OpenAI — Codex
 
 Focus on the delivery harness: repository instructions, acceptance criteria, small phases, deterministic verification, and a build log. Pair it with a live code change during the conversation.
+
+### Exa
+
+Focus on the grounded-research demo: normalize search results, remove duplicate URLs, require claim-level citations, enforce source diversity, and block unsupported reports. Explain that the included Exa adapter follows the current Search API shape while the evaluation path stays deterministic and credential-free. Ask how Exa's DevRel team measures whether an example teaches developers good retrieval habits rather than only producing an impressive demo.
+
+### TypeSafe AI
+
+Focus on the typed-decision lab: fixed outcomes, explicit confidence and risk thresholds, Brier score calculation, and human-review routing. Explain that the application owns the consequential policy decision; the model supplies typed probabilistic judgment. Ask which real developer workflow would be most useful as a second Jev example.
 
 ## Short outreach line
 

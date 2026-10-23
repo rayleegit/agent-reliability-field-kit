@@ -22,6 +22,8 @@ def main() -> None:
     run([sys.executable, "run_demo.py"], "eval-lab")
     run([sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"], "eval-lab")
     run([node, "--test", "test/policy.test.mjs"], "identity-gateway")
+    run([node, "demo.mjs"], "circle-agent-spend-guard")
+    run([node, "--test", "test/policy.test.mjs"], "circle-agent-spend-guard")
     run(
         [sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"],
         "codex-delivery-harness",
@@ -42,7 +44,7 @@ def main() -> None:
         [sys.executable, "-m", "unittest", "discover", "-s", "test", "-v"],
         "neo4j-graphrag-workshop",
     )
-    print("\nAll six demos verified and every release gate succeeded.")
+    print("\nAll seven demos verified and every release gate succeeded.")
 
 
 if __name__ == "__main__":
